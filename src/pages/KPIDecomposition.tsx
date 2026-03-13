@@ -265,7 +265,7 @@ const KPIDecomposition: React.FC = () => {
           <div style={pageStyles.actions}>
             <button
               style={pageStyles.btnPrimary}
-              onClick={() => navigate('/pdca-plan', { state: { formData, kpiData } })}
+              onClick={() => navigate('/weekly-todo', { state: { formData, kpiData } })}
             >
               次へ進む
             </button>
