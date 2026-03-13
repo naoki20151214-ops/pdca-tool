@@ -343,7 +343,7 @@ const WeeklyTodoList: React.FC = () => {
 
     try {
       await addDoc(collection(db, 'weeklyReports'), report);
-      navigate('/weekly-retrospective', { state: { report } });
+      navigate('/daily-task', { state: { report } });
     } catch (err) {
       const message =
         err instanceof Error ? err.message : 'Firestore への保存に失敗しました。';

@@ -4,6 +4,7 @@ import GoalInput from './pages/GoalInput';
 import FeasibilityCheck from './pages/FeasibilityCheck';
 import KPIDecomposition from './pages/KPIDecomposition';
 import WeeklyTodoList from './pages/WeeklyTodoList';
+import DailyTaskInstruction from './pages/DailyTaskInstruction';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <Route path="/feasibility-check" element={<FeasibilityCheck />} />
         <Route path="/kpi-decomposition" element={<KPIDecomposition />} />
         <Route path="/weekly-todo" element={<WeeklyTodoList />} />
+        <Route path="/daily-task" element={<DailyTaskInstruction />} />
       </Routes>
     </BrowserRouter>
   );
