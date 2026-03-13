@@ -35,12 +35,20 @@ const FeasibilityCheck: React.FC = () => {
         <dt style={{ fontWeight: 'bold' }}>現在の状況</dt>
         <dd>{currentSituation || '未入力'}</dd>
       </dl>
-      <button
-        onClick={() => navigate('/')}
-        style={{ marginTop: '24px', padding: '10px 20px', cursor: 'pointer' }}
-      >
-        ゴール入力に戻る
-      </button>
+      <div style={{ marginTop: '24px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+        <button
+          onClick={() => navigate('/kpi-decomposition', { state: { formData: state.formData } })}
+          style={{ padding: '10px 20px', cursor: 'pointer', backgroundColor: '#3182ce', color: '#fff', border: 'none', borderRadius: '4px' }}
+        >
+          KPI自動分解へ進む
+        </button>
+        <button
+          onClick={() => navigate('/')}
+          style={{ padding: '10px 20px', cursor: 'pointer' }}
+        >
+          ゴール入力に戻る
+        </button>
+      </div>
     </div>
   );
 };
